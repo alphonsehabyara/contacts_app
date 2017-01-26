@@ -1,10 +1,15 @@
 <h1> Contact </h1>
 
-<h2> Name: <%= @contact.first_name %></h2>
-<h2> Last Name: <%= @contact.last_name %></h2>
-<h2> Email: <%= @contact.email %></h2>
-<h2> Tel Number: <%= @contact.phone_nber %></h2>
-
+<h3><b>First Name:</b> <%= @contact.first_name %></h3>
+<h3><b>Middle Name:</b> <%= @contact.middle_name %></h3>
+<h3><b>Last Name:</b> <%= @contact.last_name %></h3>
+<h3><b>Bio:</b> <%= @contact.bio %></h3>
+<h3><b>Email:</b> <%= @contact.email %></h3>
+<h3><b>Tel Number:</b> <%= @contact.phone_nber %></h3>
+<!-- <h3><b>Latitude:</b> <%= @contact.latitude %></h3>
+<h3><b>Longitude:</b> <%= @contact.longitude %></h3> -->
+<h3> Added <%= @contact.friendly_created_at %> </h3>
+<h3> Updated <%= @contact.friendly_updated_at %> </h3>
 <button class="btn btn-info"><a href="<%= @contact.id %>/edit">Edit</a></button>
 
 <%= button_to "Delete", "/contacts/#{@contact.id}", method: :delete %>

@@ -1,21 +1,31 @@
-<h1> You are editing a contact </h1>
+<h2> A contact, <%= @contact.first_name %> <%= @contact.last_name %> is being edited </h2>
 
 
 <%= form_tag "/contacts/#{@contact.id}", method: :patch do %>
 
   <div class="form-group">
-    First Name: <input type="text" name="first_name" class="form-group" value=<%= @contact.first_name %>>
+    <b>First Name:</b> <input type="text" name="first_name" class="form-group" value=<%= @contact.first_name %>>
   </div>
   <div class="form-group">
-    Last Name: <input type="text" name="last_name" class="form-group" value=<%= @contact.last_name %>>
+    <b>Middle Name:</b> <input type="text" name="middle_name" class="form-group" value=<%= @contact.middle_name %>>
   </div>
   <div class="form-group">
-    Email: <input type="text" name="email" class="form-group" value=<%= @contact.email %>>
+    <b>Last Name:</b> <input type="text" name="last_name" class="form-group" value=<%= @contact.last_name %>>
+  </div>
+  <div class="form-group">
+    <b>Bio:</b> <input type="text" name="bio" class="form-group" value=<%= @contact.bio %>>
+  </div>
+  <div class="form-group">
+    <b>Email:</b> <input type="text" name="email" class="form-group" value=<%= @contact.email %>>
   </div>
   <div>
-  Phone Number: <input type="text" name="phone_nber" class="form-group" value=<%= @contact.phone_nber %>> 
+  <b>Phone Number:</b> <input type="text" name="phone_nber" class="form-group" value=<%= @contact.phone_nber %>> 
   </div>
-
+      <b>Latitude:</b> <input type="text" name="Latitude" class="form-group" value=<%= @contact.latitude %>>
+  </div>
+  <div>
+  <b>Longitude:</b> <input type="text" name="longitude" class="form-group" value=<%= @contact.longitude %>> 
+  </div>
   <input type="submit" name="submit" class="btn btn-info">
   </div>
 <% end %>
