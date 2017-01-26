@@ -1,0 +1,22 @@
+<h1> New contact </h1>
+
+
+<%= form_tag "/contacts", method: :post do %>
+
+  <div class="form-group">
+    First Name: <input type="text" name="first_name" class="form-group">
+  </div>
+  <div class="form-group">
+    Last Name: <input type="text" name="last_name" class="form-group">
+  </div>
+  <div class="form-group">
+    Email: <input type="text" name="email" class="form-group">
+  </div>
+  <div>
+  Phone Number: <input type="text" name="phone_nber" class="form-group"> 
+  </div>
+
+  <input type="submit" name="submit" class="btn btn-info">
+  </div>
+
+<% end %>

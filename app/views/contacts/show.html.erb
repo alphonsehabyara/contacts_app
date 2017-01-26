@@ -1,0 +1,10 @@
+<h1> Contact </h1>
+
+<h2> Name: <%= @contact.first_name %></h2>
+<h2> Last Name: <%= @contact.last_name %></h2>
+<h2> Email: <%= @contact.email %></h2>
+<h2> Tel Number: <%= @contact.phone_nber %></h2>
+
+<button class="btn btn-info"><a href="<%= @contact.id %>/edit">Edit</a></button>
+
+<%= button_to "Delete", "/contacts/#{@contact.id}", method: :delete %>
