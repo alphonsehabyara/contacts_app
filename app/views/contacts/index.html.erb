@@ -10,8 +10,8 @@
             <h3><b>Bio:</b> <%= contact.bio %></h3>
             <h3><b>Email:</b> <%= contact.email %></h3>
             <h3><b>Tel Number:</b> <%= contact.phone_nber %></h3>     
-            <h3><b>Latitude: </b> <%= contact.latitude %></h3>
-            <h3><b>Longitude: </b> <%= contact.longitude %></h3>
+<!--             <h3><b>Latitude: </b> <%= contact.latitude %></h3>
+            <h3><b>Longitude: </b> <%= contact.longitude %></h3> -->
             </h3> 
           </div>
         <% end %>
@@ -19,4 +19,5 @@
   <% end %>
 </div>
 
-
+<%= button_to "Add a New Item", "/products/new", class: "btn btn-primary", method: :get %>
+<table class="table-striped"> </table>
