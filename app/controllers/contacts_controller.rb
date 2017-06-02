@@ -2,7 +2,7 @@ class ContactsController < ApplicationController
 
   def index
     @contacts = Contact.all
-    render "index.html.erb"
+    render "index.html.erb" 
   end
 
   def show 
